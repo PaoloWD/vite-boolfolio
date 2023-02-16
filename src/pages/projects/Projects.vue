@@ -29,8 +29,9 @@ export default {
 
 <template>
   <h3>Lista Progetti</h3>
-
-  <div v-for="project in projects" :key="project.id">
-    <CardProject :placeholder="project"></CardProject>
+  <div class="d-flex">
+    <div v-for="project in projects" :key="project.id">
+      <CardProject :placeholder="project"></CardProject>
+    </div>
   </div>
 </template>
